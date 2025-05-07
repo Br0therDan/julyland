@@ -9,7 +9,7 @@ client = Minio(
     access_key=settings.S3_ACCESS_KEY_ID,
     secret_key=settings.S3_SECRET_ACCESS_KEY,
     region=settings.S3_REGION,
-    secure=False
+    secure=False,
 )
 
 

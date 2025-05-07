@@ -10,12 +10,13 @@ services:
     volumes:
       - mongo-data:/data/db
     networks:
-      - julyland-net
+      - internal
     labels:
       traefik.enable: "false"
 
   management:
-    image: brotherdan21/jl-management:latest
+    build:
+      context: ./backend/management
     container_name: management-jl
     restart: always
     env_file:
@@ -24,7 +25,8 @@ services:
       mongodb:
         condition: service_started
     networks:
-      - julyland-net
+      - internal
+      - web
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health-check"]
       interval: 5s
@@ -40,7 +42,8 @@ services:
       traefik.http.routers.management.tls.certresolver: "le"
 
   iam:
-    image: brotherdan21/jl-iam:latest
+    build:
+      context: ./backend/iam
     container_name: iam-jl
     env_file: [".env"]
     restart: always
@@ -114,7 +117,8 @@ services:
       - web
 
   frontend:
-    image: brotherdan21/jl-frontend:latest
+    build:
+      context: ./frontend
     container_name: jl-frontend
     restart: always
     env_file: [".env"]
@@ -130,10 +134,51 @@ services:
       traefik.http.routers.frontend.tls:         "true"
       traefik.http.routers.frontend.tls.certresolver: "le"
 
+  minio:
+    image: minio/minio
+    container_name: minio-jl-bucket
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}     # 기본 Access Key
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}  # 기본 Secret Key
+    volumes:
+      - minio_data:/data
+    networks:
+      - internal
+      - web
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+    labels:
+      traefik.enable: "false"
+      traefik.docker.network: "web"
+      traefik.http.services.minio.loadbalancer.server.port: "9000"
+      traefik.http.routers.minio.rule:         "Host(`minio.${DOMAIN}`)"
+      traefik.http.routers.minio.entrypoints:  "websecure"
+      traefik.http.routers.minio.tls:          "true"
+      traefik.http.routers.minio.tls.certresolver: "le"
+
+
 volumes:
   mongo-data:
+  minio_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: /data/minio
+      o: bind
+  letsencrypt:
+    driver: local
+    driver_opts:
+      type: none
+      device: /data/letsencrypt
+      o: bind
 
 networks:
-  julyland-net:
+  web:
+    external: true
+  internal:
     driver: bridge
       
