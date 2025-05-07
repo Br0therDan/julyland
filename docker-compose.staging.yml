@@ -68,7 +68,7 @@ services:
 
   traefik:
     image: traefik:3.0
-    container_name: jl-traefik
+    container_name: traefik
     restart: always
     command:
       - "--log.level=DEBUG"
@@ -136,7 +136,7 @@ services:
 
   minio:
     image: minio/minio
-    container_name: minio-jl-bucket
+    container_name: minio
     command: server /data --console-address ":9001"
     environment:
       - MINIO_ROOT_USER=${MINIO_ROOT_USER}     # 기본 Access Key
