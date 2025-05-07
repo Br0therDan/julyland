@@ -25,7 +25,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState<boolean>(true)
 
   const router = useRouter()
-
+ /**
+   * [중요] 로그아웃
+   * 쿠키, 상태 정리 후 /auth/login 으로 리다이렉트
+   */
+ const handleLogout = useCallback(async () => {
+  try {
+    await AuthService.authLogout()
+  } catch (err) {
+    const errorMsg =
+      (err as { response?: { data?: { detail?: string } }; message: string })
+        .response?.data?.detail || (err as { message: string }).message
+    setError(errorMsg)
+    handleApiError(err, (message) =>
+      toast.error(message.title, { description: message.description })
+    )
+  } finally {
+    Cookies.remove('user_data')
+    Cookies.remove('access_token')
+    Cookies.remove('refresh_token')
+    Cookies.remove('token_type')
+    setUser(null)
+    router.push('/auth/login')
+  }
+}, [router])
   /**
    * [중요] 서버에서 최신 사용자 정보를 불러오고 쿠키에 저장
    */
@@ -51,7 +74,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     } finally {
       setLoading(false)
     }
-  }, [router])
+  }, [ handleLogout])
 
   /**
    * [중요] 페이지 로드시 쿠키 확인 → user_data 쿠키가 있으면 즉시 user 상태로 세팅
@@ -87,30 +110,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [refreshUser])
 
-  /**
-   * [중요] 로그아웃
-   * 쿠키, 상태 정리 후 /auth/login 으로 리다이렉트
-   */
-  const handleLogout = async () => {
-    try {
-      await AuthService.authLogout()
-    } catch (err) {
-      const errorMsg =
-        (err as { response?: { data?: { detail?: string } }; message: string })
-          .response?.data?.detail || (err as { message: string }).message
-      setError(errorMsg)
-      handleApiError(err, (message) =>
-        toast.error(message.title, { description: message.description })
-      )
-    } finally {
-      Cookies.remove('user_data')
-      Cookies.remove('access_token')
-      Cookies.remove('refresh_token')
-      Cookies.remove('token_type')
-      setUser(null)
-      router.push('/auth/login')
-    }
-  }
+ 
 
   /**
    * [중요] 로그인

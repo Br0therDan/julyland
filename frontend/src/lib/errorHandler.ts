@@ -71,7 +71,7 @@ export const handleApiError = (error: unknown, toast: ToastType) => {
 // import * as Sentry from "@sentry/react";
 // import type { ToastType } from "@/types/api";
 // import { RequiredError } from "@/client/iam/base";
-// // import { getTranslations } from 'next-intl/server';
+// // import { getTranslations } from '/server';
 // import { useTranslations } from 'next-intl';
 
 // export interface ApiErrorResponse {

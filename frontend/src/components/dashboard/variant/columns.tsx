@@ -5,11 +5,13 @@ import { VariantService } from "@/lib/api";
 import { formatDateTime } from "@/utils/formatDate";
 import { toast } from "sonner";
 import { VariantPublic } from "@/client/management";
-import ProductVariantForm from "./ProductVariantForm";
+
 import { Badge } from "@/components/ui/badge";
 import InventoryForm from "../inventory/InventoryForm";
 import DefaultHeader from "@/components/data_table/DefaultHeader";
-import ActionsMenu from '@/components/common/ActionsMenu';
+import ActionsMenu from "@/components/common/ActionsMenu";
+import { handleApiError } from "@/lib/errorHandler";
+import VariantForm from './VariantForm';
 
 export const columns: ColumnDef<VariantPublic>[] = [
   {
@@ -132,9 +134,7 @@ export const columns: ColumnDef<VariantPublic>[] = [
     accessorKey: "updated_at",
     id: "최종 수정일",
     header: (info) => {
-      return (
-        <DefaultHeader<VariantPublic> info={info} name="최종 수정일" />
-      );
+      return <DefaultHeader<VariantPublic> info={info} name="최종 수정일" />;
     },
     cell: ({ row }) => {
       const product = row.original;
@@ -151,26 +151,26 @@ export const columns: ColumnDef<VariantPublic>[] = [
       const productVariant = row.original;
       return (
         <ActionsMenu
-          title = ""
+          title=""
           editButton={
-            <ProductVariantForm 
-              mode="edit" 
-              product_id={productVariant.product?._id} 
-              productVariant={productVariant}
-            />}
-          addButton={
-            <InventoryForm 
-              mode="add"
+            <VariantForm
+              mode="edit"
+              product_id={productVariant.product?._id}
               variant={productVariant}
-            />}
+            />
+          }
+          addButton={<InventoryForm mode="add" variant={productVariant} />}
           value={productVariant}
           deleteApi={async () => {
             try {
               await VariantService.variantDeleteVariant(productVariant._id);
-              toast.success(`"${productVariant.name}" 제품변형이 삭제되었습니다.`);
-            }
-            catch (err) {
-              toast.error(`"${productVariant.name}" 제품변형 삭제에 실패하였습니다.`);
+              toast.success(
+                `"${productVariant.name}" 제품변형이 삭제되었습니다.`
+              );
+            } catch (err) {
+              handleApiError(err, (message) =>
+                toast.error(message.title, { description: message.description })
+              );
             }
           }}
         />

@@ -4,7 +4,8 @@ import React, {
   createContext,
   useState,
   useEffect,
-  useMemo, // ✅ useMemo 추가
+  useMemo,
+  useCallback, // ✅ useMemo 추가
 } from "react";
 import { ProductService, VariantService } from "@/lib/api";
 import { ProductPublic, VariantPublic } from "@/client/management";
@@ -39,7 +40,7 @@ export const ProductProvider = ({
   const [ variants, setVariants ] = useState<VariantPublic[]>([]);
   const [ loading, setLoading ] = useState<boolean>(true);
 
-  const fetchProductList = async (catName?: string, brandName?: string) => {
+  const fetchProductList = useCallback(async (catName?: string, brandName?: string) => {
     setLoading(true);
     try {
       const response = await ProductService.productListProducts(catName, brandName);
@@ -52,9 +53,9 @@ export const ProductProvider = ({
     } finally {
       setLoading(false);
     }
-  };
+  }, []); // ✅ 종속성 추가
 
-  const fetchProduct = async (productId: string) => {
+  const fetchProduct = useCallback(async (productId: string) => {
     setLoading(true);
     try {
       const response = await ProductService.productReadProduct(productId);
@@ -66,17 +67,17 @@ export const ProductProvider = ({
     } finally {
       setLoading(false);
     }
-  }
+  }, []); // ✅ 종속성 추가
 
   useEffect(() => {
     fetchProductList(currentCategoryName, selectedBrand?.name);
-  }, [currentCategoryName, selectedBrand]); // ✅ 종속성 추가
+  }, [fetchProductList]); // ✅ 종속성 추가
 
   useEffect(() => {
     if (selectedProduct) {
       fetchProduct(selectedProduct._id);
     }
-  }, []); // ✅ 종속성 추가
+  }, [selectedProduct, fetchProduct]); // ✅ 종속성 추가
 
   const fetchVariants = async (productId?: string) => {
     setLoading(true);
@@ -119,6 +120,7 @@ export const ProductProvider = ({
       loading,
       fetchProductList,
       fetchProduct,
+      variants,
     ]
   ); // ✅ 의존성 명시
 

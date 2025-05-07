@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { useRanking } from "@/hooks/useRanking";
-import { Button } from "@/components/ui/button";
 import { formatDateTime } from "@/utils/formatDate";
 import ActionsMenu from "@/components/common/ActionsMenu";
 import { RankingService } from "@/lib/api";

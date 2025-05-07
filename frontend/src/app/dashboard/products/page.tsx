@@ -5,7 +5,7 @@ import { useCategory } from "@/hooks/useCategory";
 import { useProduct } from "@/hooks/useProduct";
 import CategorySwitcher from "@/components/dashboard/category/CategorySwitcher";
 import { ProductSelect } from '@/components/dashboard/product/ProductSelect';
-import ProductVariantsTable from '@/components/dashboard/variant/ProductVariantTable';
+import VariantsTable from '@/components/dashboard/variant/VariantTable';
 import { BrandSwitch } from '@/components/dashboard/brand/BrandSwitch';
 
 export default function ProductPage() {
@@ -29,7 +29,7 @@ export default function ProductPage() {
           <BrandSwitch />
           <ProductSelect />
         </div>
-        <ProductVariantsTable />
+        <VariantsTable />
       </div>
     </div>
   );

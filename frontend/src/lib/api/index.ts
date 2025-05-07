@@ -1,2 +1,2 @@
-export * from './iam-jl';
+export * from './iam';
 export * from './management';

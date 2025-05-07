@@ -4,7 +4,6 @@ import PageTitle from "@/components/common/PageTitle";
 import BrandCard from '@/components/dashboard/brand/BrandCard';
 import CategoryCard from '@/components/dashboard/category/CategoryCard';
 import MarketCard from '@/components/dashboard/market/MarketCard';
-import ProductCard from '@/components/dashboard/product/ProductCard';
 import ProductsTable from '@/components/dashboard/product/ProductsTable';
 
 import React from "react";

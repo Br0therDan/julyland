@@ -21,22 +21,18 @@ import { Label } from "@/components/ui/label";
 
 import { MyButton } from "@/components/common/buttons/submit-button"; // Custom ShadCN-based button
 import {
-  ProductPublic,
   InventoryCreate,
   InventoryPublic,
-  ProductVariantPublic,
+  VariantPublic,
   InventoryCreateChangeTypeEnum,
 } from "@/client/management";
-
 import { toast } from "sonner";
-import { InventoryService, ProductService, VariantService } from "@/lib/api";
+import { InventoryService, VariantService } from "@/lib/api";
 import { handleApiError } from "@/lib/errorHandler";
 import { useState } from "react";
 import Loading from "@/components/common/Loading";
-
 import { Button } from "@/components/ui/button";
-import { Edit, PlusCircle, Trash2 } from "lucide-react";
-// import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Edit, PlusCircle } from "lucide-react";
 import { capitalizeFirstLetter } from "@/utils/formatName";
 import {
   Select,
@@ -48,7 +44,7 @@ import {
 
 interface InventoryFormProps {
   mode?: "add" | "edit";
-  variant: ProductVariantPublic;
+  variant: VariantPublic;
   inventory?: InventoryPublic;
   onSuccess?: () => void;
 }
@@ -60,7 +56,7 @@ export default function InventoryForm({
   onSuccess,
 }: InventoryFormProps) {
   const [loading, setLoading] = useState<boolean>(false);
-  const [variants, setVariants] = useState<ProductVariantPublic[]>([]);
+  const [variants, setVariants] = useState<VariantPublic[]>([]);
 
   const methods = useForm<InventoryCreate>({
     mode: "onBlur",
@@ -84,7 +80,6 @@ export default function InventoryForm({
     control,
     setValue,
     handleSubmit,
-    watch,
     reset,
 
     formState: { isSubmitting, isDirty },
@@ -150,8 +145,6 @@ export default function InventoryForm({
     }
   };
 
-  const options = watch("options");
-
   const onSubmit: SubmitHandler<InventoryCreate> = (data) => {
     if (mode === "add") {
       return addInventory(data);
@@ -159,15 +152,6 @@ export default function InventoryForm({
     if (mode === "edit") {
       return editInventory(data);
     }
-  };
-  const handleAddOption = () => {
-    setValue("options", [...(options || []), { name: "", value: "" }]);
-  };
-
-  const handleRemoveOption = (index: number) => {
-    const newSubcategories = [...(options || [])];
-    newSubcategories.splice(index, 1);
-    setValue("options", newSubcategories);
   };
 
   if (loading) {

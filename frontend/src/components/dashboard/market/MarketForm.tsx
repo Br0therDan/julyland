@@ -1,12 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import {
   useForm,
   SubmitHandler,
   FormProvider,
-  // Controller,
 } from "react-hook-form";
-
 import { toast } from "sonner";
 import {
   Dialog,
@@ -22,8 +20,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { FormMessage } from "@/components/ui/form";
 import { MyButton } from "@/components/common/buttons/submit-button";
-
-
 import { handleApiError } from "@/lib/errorHandler";
 import { useState } from "react";
 import Loading from "@/components/common/Loading";
@@ -32,12 +28,9 @@ import {
   MarketPlacePublic,
   MarketPlaceUpdate,
 } from "@/client/management";
-
-import SelectForm from "@/components/common/forms/Select";
 import { Button } from "@/components/ui/button";
-import { Edit, PlusCircle, Trash2 } from "lucide-react";
+import { Edit, PlusCircle } from "lucide-react";
 import { MarketService } from '@/lib/api';
-import { set } from 'date-fns';
 
 interface AddMarketProps {
   mode: "add" | "edit";
@@ -53,7 +46,6 @@ export default function MarketForm({
   onSuccess,
 }: AddMarketProps) {
   const [loading, setLoading] = useState(false);
-  const [categories, setCategories] = useState<MarketPlacePublic[]>([]);
   const methods = useForm<MarketPlaceCreate>({
     mode: "onBlur",
     criteriaMode: "all",
@@ -71,27 +63,9 @@ export default function MarketForm({
   const {
     register,
     handleSubmit,
-    setValue,
-    watch,
     reset,
     formState: { errors, isSubmitting, isDirty },
   } = methods;
-
-  const subcategories = watch('subcategories')
-
-  const fetchCategories = async () => {
-    try {
-      const response = await MarketService.marketListMarkets();
-      setCategories(response.data);
-    } catch (err) {
-      handleApiError(err, (message) =>
-        toast.error(message.title, { description: message.description })
-      );
-    }
-  };
-  useEffect(() => {
-    fetchCategories();
-  }, []);
 
   const addMarket = async (market: MarketPlaceCreate) => {
     setLoading(true);

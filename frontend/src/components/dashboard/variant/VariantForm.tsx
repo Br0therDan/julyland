@@ -21,16 +21,14 @@ import { Label } from "@/components/ui/label";
 
 import { MyButton } from "@/components/common/buttons/submit-button"; // Custom ShadCN-based button
 import {
-  MediaAssetCreate,
   ProductPublic,
-  ProductUpdate,
   VariantCreate,
   VariantPublic,
   VariantUpdate,
 } from "@/client/management";
 
 import { toast } from "sonner";
-import { MediaService, ProductService, VariantService } from "@/lib/api";
+import { ProductService, VariantService } from "@/lib/api";
 import { handleApiError } from "@/lib/errorHandler";
 import { useState } from "react";
 import Loading from "@/components/common/Loading";
@@ -74,7 +72,7 @@ export default function VariantForm({
             name: variant?.name,          
             options: variant?.options || [],
             barcode: variant?.barcode,
-            media_assets: variant?.media_assets || [],
+            media_urls: variant?.media_urls || [],
             price: variant?.price,
           }
         : {
@@ -184,36 +182,6 @@ export default function VariantForm({
     setValue("options", newSubcategories);
   };
 
-  const handleAddImage = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files) {
-      for (const file of Array.from(files)) {
-        try {
-          const mediaAssetData: MediaAssetCreate = {
-            doc_id: variant?._id || "",
-            type: file.type,
-            file_name: file.name,
-            mime_type: file.type,
-          };
-
-          const mediaResponse = await MediaService.mediaUploadMedia(
-            mediaAssetData
-          );
-          // 반환받은 URL을 media_assets 배열에 추가
-          setValue("media_assets", [...(watch("media_assets") || []), mediaResponse.data.url]);
-        } catch (error) {
-          console.error("이미지 업로드 실패", error);
-          toast.error("이미지 업로드에 실패했습니다.");
-        }
-      }
-    }
-  };
-  const handleRemoveImage = (index: number) => {
-    const updatedImages = [...(watch("media_assets") || [])];
-    updatedImages.splice(index, 1);
-    setValue("media_assets", updatedImages);
-  };
-
 
   if (loading) {
     return <Loading />;
@@ -245,7 +213,7 @@ export default function VariantForm({
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle>
-              {mode === "add" || mode === "create" ? "제품 변형 추가" : "제품 변형 수정"}
+              {mode === "add" || mode === "create" ? (<><PlusCircle/><span>제품 변형 추가</span></>) : (<><Edit/><span>제품 변형 수정</span></>)}
             </DialogTitle>
             <DialogDescription>
               {mode === "add" || mode === "create"

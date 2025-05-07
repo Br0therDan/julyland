@@ -1,7 +1,6 @@
 
 import React from "react";
 import PageTitle from "@/components/common/PageTitle";
-import InventoryTable from '@/components/dashboard/inventory/InventoryTable';
 
 export default function InventoryPage() {
   return (

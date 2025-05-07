@@ -3,12 +3,12 @@ import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { InventoryService, VariantService } from "@/lib/api";
+import { InventoryService } from "@/lib/api";
 import { formatDateTime } from "@/utils/formatDate";
 
 import DeleteAlert from "@/components/common/DeleteAlert";
 import { toast } from "sonner";
-import { InventoryPublic, ProductVariantPublic } from "@/client/management";
+import { InventoryPublic, VariantPublic } from "@/client/management";
 import InventoryForm from "./InventoryForm";
 import { Badge } from "@/components/ui/badge";
 
@@ -50,7 +50,7 @@ export const columns: ColumnDef<InventoryPublic>[] = [
       );
     },
     cell: ({ cell }) => {
-      const variant = cell.getValue() as ProductVariantPublic;
+      const variant = cell.getValue() as VariantPublic;
       return (
         <div className="flex items-center gap-2">
           <span className="font-bold">{variant.product.name}</span>

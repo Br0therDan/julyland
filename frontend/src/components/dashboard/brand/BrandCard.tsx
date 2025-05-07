@@ -1,11 +1,7 @@
 "use client";
-import React, { use, useEffect } from "react";
+import React from "react";
 import { toast } from "sonner";
-import { handleApiError } from "@/lib/errorHandler";
-import { Edit, Trash2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import BrandForm from "./BrandForm";
-import { BrandPublic } from "@/client/management";
 import { BrandService } from "@/lib/api";
 import DashboardCard from "@/components/common/card/DashboardCard";
 import { Badge } from "@/components/ui/badge";
@@ -15,23 +11,6 @@ import ActionsMenu from '@/components/common/ActionsMenu';
 export default function BrandCard() {
   const { brands, fetchBrands } = useCategory();
 
-  useEffect(() => {
-    fetchBrands("total");
-  }, []);
-
-  const handleDeleteClick = async (brand: BrandPublic) => {
-    try {
-      await BrandService.brandDeleteBrand(brand._id);
-      fetchBrands("total");
-      toast.success("브랜드 삭제", {
-        description: `${brand.name} 브랜드 삭제 완료`,
-      });
-    } catch (err) {
-      handleApiError(err, (message) =>
-        toast.error(message.title, { description: message.description })
-      );
-    }
-  };
 
   return (
     <DashboardCard

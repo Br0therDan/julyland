@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { useEffect, useState } from 'react'
-
 import { InventoryService } from '@/lib/api'
 import type { InventoryPublic } from '@/client/management'
 import DataTable from '@/components/data_table/DataTable'

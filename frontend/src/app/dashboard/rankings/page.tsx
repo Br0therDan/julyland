@@ -3,7 +3,6 @@ import React from "react";
 import PageTitle from "@/components/common/PageTitle";
 import RankingSelect from "@/components/dashboard/ranking/RankingSelect";
 import RankingDetailTable from "@/components/dashboard/ranking/RankingDetailTable";
-("@/components/dashboard/product_varient/ProductVariantForm");
 import { Rss } from "lucide-react";
 import { MyButton } from "@/components/common/buttons/submit-button";
 import { useCategory } from '@/hooks/useCategory';

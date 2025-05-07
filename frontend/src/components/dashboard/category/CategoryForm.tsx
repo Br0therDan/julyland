@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import {
   useForm,
   SubmitHandler,
@@ -15,7 +15,6 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-  DialogOverlay,
   DialogClose,
   DialogTrigger,
 } from "@/components/ui/dialog";
@@ -34,11 +33,10 @@ import {
   CategoryUpdate,
 } from "@/client/management";
 
-import SelectForm from "@/components/common/forms/Select";
 import { Button } from "@/components/ui/button";
 import { Edit, PlusCircle, Trash2 } from "lucide-react";
 import { CategoryService } from '@/lib/api';
-import { set } from 'date-fns';
+import { useCategory } from '@/hooks/useCategory';
 
 interface AddCategoryProps {
   mode: "add" | "edit";
@@ -54,7 +52,8 @@ export default function CategoryForm({
   onSuccess,
 }: AddCategoryProps) {
   const [loading, setLoading] = useState(false);
-  const [categories, setCategories] = useState<CategoryPublic[]>([]);
+  const { fetchCategories } = useCategory();
+
   const methods = useForm<CategoryCreate>({
     mode: "onBlur",
     criteriaMode: "all",
@@ -82,19 +81,6 @@ export default function CategoryForm({
 
   const subcategories = watch('subcategories')
 
-  const fetchCategories = async () => {
-    try {
-      const response = await CategoryService.categoryListCategories();
-      setCategories(response.data);
-    } catch (err) {
-      handleApiError(err, (message) =>
-        toast.error(message.title, { description: message.description })
-      );
-    }
-  };
-  useEffect(() => {
-    fetchCategories();
-  }, []);
 
   const addCategory = async (category: CategoryCreate) => {
     setLoading(true);
@@ -142,8 +128,10 @@ export default function CategoryForm({
 
     if (mode === "add") {
       await addCategory(data as CategoryCreate);
+      fetchCategories();
     } else if (mode === "edit" && category) {
       await updateCategory(data as CategoryUpdate);
+      fetchCategories();
     }
   };
 

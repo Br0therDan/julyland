@@ -1,5 +1,5 @@
 import React from 'react'
-import { MyLogo, MyLogoDark } from '@/components/common/brand/logo'
+import { MyLogo } from '@/components/common/brand/logo'
 import { SidebarTrigger } from '../ui/sidebar'
 
 interface HeaderProps {

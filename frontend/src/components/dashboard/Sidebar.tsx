@@ -17,10 +17,7 @@ import {
   Home,
   AppWindowIcon,
   ChartColumnBig,
-  Box,
-  Store,
   Warehouse,
-  PackageOpen,
   ShoppingCart,
   Package,
 

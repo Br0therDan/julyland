@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { formatName } from '@/utils/formatName'
 import { UserPublic } from '@/client/iam'
 
+
 // Reusable Avatar Component
 export default function UserAvatar({
   userData,

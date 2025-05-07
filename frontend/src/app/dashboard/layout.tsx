@@ -1,10 +1,8 @@
 // Path: src/app/dashboard/rankings/layout.tsx
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import DashboardSidebar from "@/components/dashboard/Sidebar";
-import { SidebarTrigger } from "@/components/ui/sidebar";
 import { CategoryProvider } from "@/contexts/CategoryContext";
 import { ProductProvider } from "@/contexts/ProductContext";
-import { CategoryService } from "@/lib/api";
 
 export default async function DashboardLayout({
   children,

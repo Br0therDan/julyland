@@ -67,7 +67,7 @@ export const CategoryProvider = ({
         toast.error(message.title, { description: message.description })
       );
     }
-  }, [currentCategoryName]);
+  }, [ brands]);
 
 
   useEffect(() => {
@@ -80,7 +80,7 @@ export const CategoryProvider = ({
     } else {
       fetchBrands();
     }
-  }, [currentCategoryName]);
+  }, [currentCategoryName, fetchBrands ]);
 
 
   const value = useMemo(
@@ -97,7 +97,7 @@ export const CategoryProvider = ({
       fetchBrands,
       fetchCategories,
     }), // Removed setCurrentCategory from the value object
-    [ categories, currentCategoryName, brands, selectedBrand, fetchBrands, fetchCategories ]
+    [ categories, currentCategoryName, brands, selectedBrand, selectedCategory, fetchBrands, fetchCategories ]
   );
 
   return (

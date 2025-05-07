@@ -11,12 +11,10 @@ import { Button } from '@/components/ui/button'
 import { useAuth } from '@/contexts/AuthContext'
 import { useRouter } from 'next/navigation'
 import { LayoutDashboard, LogOut, User } from 'lucide-react'
-import { useTranslations } from 'next-intl'
 import { RiAdminLine } from 'react-icons/ri'
 
 export default function UserButton() {
   const { user: userData, logout } = useAuth()
-  const t = useTranslations()
   const router = useRouter()
   const handleLogout = () => {
     logout()
@@ -58,16 +56,16 @@ export default function UserButton() {
         <ul className='space-y-1 px-4'>
           {userData?.is_superuser == true && (
             <li>
-              <Button variant='ghost' onClick={() => router.push('/admin')}>
+              <Button variant='ghost' onClick={() => router.push('/dashboard')}>
                 <RiAdminLine className='h-5 w-5 mr-2' />
-                {t('user_button.admin_dashboard')}
+                관리자 대시보드
               </Button>
             </li>
           )}
           <li>
             <Button variant='ghost' onClick={() => router.push('/main')}>
               <LayoutDashboard className='h-5 w-5 mr-2' />
-              {t('user_button.dashboard')}
+              대시보드
             </Button>
           </li>
           <li>
@@ -76,7 +74,7 @@ export default function UserButton() {
               onClick={() => router.push('/main/settings')}
             >
               <User className='h-5 w-5 mr-2' />
-              {t('user_button.profile')}
+              프로필
             </Button>
           </li>
           <li
@@ -84,7 +82,7 @@ export default function UserButton() {
             onClick={handleLogout}
           >
             <LogOut className='h-5 w-5 mr-2' />
-            {t('user_button.logout')}
+            로그아웃
           </li>
         </ul>
       </SheetContent>

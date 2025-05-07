@@ -4,7 +4,7 @@ import DataTable from '@/components/data_table/DataTable'
 import { columns } from './columns'
 import { useProduct } from '@/hooks/useProduct'
 
-export default function ProductVariantsTable() {
+export default function VariantsTable() {
   const { variants } = useProduct()
 
   return (

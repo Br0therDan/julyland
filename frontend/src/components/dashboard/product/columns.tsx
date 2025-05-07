@@ -8,9 +8,10 @@ import { ProductPublic } from "@/client/management";
 import ProductForm from "./ProductForm";
 import DefaultHeader from "@/components/data_table/DefaultHeader";
 import ActionsMenu from "@/components/common/ActionsMenu";
-import ProductVariantForm from "../variant/ProductVariantForm";
-import Image from "next/image";
-import { Badge } from '@/components/ui/badge';
+
+import { Badge } from "@/components/ui/badge";
+import VariantForm from '../variant/VariantForm';
+import { handleApiError } from '@/lib/errorHandler';
 
 export const columns: ColumnDef<ProductPublic>[] = [
   {
@@ -56,7 +57,6 @@ export const columns: ColumnDef<ProductPublic>[] = [
     },
     enableResizing: true,
     enableHiding: false,
-    
   },
   {
     accessorKey: "category",
@@ -129,12 +129,9 @@ export const columns: ColumnDef<ProductPublic>[] = [
     cell: ({ row }) => {
       const product = row.original;
       return (
-        <span className="text-sm">
-          {formatDateTime(product.created_at)}
-        </span>
+        <span className="text-sm">{formatDateTime(product.created_at)}</span>
       );
     },
-    
   },
   {
     accessorKey: "updated_at",
@@ -145,9 +142,7 @@ export const columns: ColumnDef<ProductPublic>[] = [
     cell: ({ row }) => {
       const product = row.original;
       return (
-        <span className="text-sm">
-          {formatDateTime(product.updated_at)}
-        </span>
+        <span className="text-sm">{formatDateTime(product.updated_at)}</span>
       );
     },
   },
@@ -162,14 +157,18 @@ export const columns: ColumnDef<ProductPublic>[] = [
         <ActionsMenu
           title="제품"
           editButton={<ProductForm mode="edit" product={product} />}
-          addButton={<ProductVariantForm mode="add" product_id={product._id} />}
+          addButton={<VariantForm mode="add" product_id={product._id} />}
           value={product}
           deleteApi={async () => {
             try {
               await ProductService.productDeleteProduct(product._id);
               toast.success(`"${product.name}" 제품이 삭제되었습니다.`);
             } catch (err) {
-              toast.error(`"${product.name}" 제품 삭제에 실패하였습니다.`);
+              handleApiError(err, (message) =>
+                toast.error(message.title, {
+                  description: message.description,
+                })
+              );
             }
           }}
         />

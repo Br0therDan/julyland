@@ -1,4 +1,3 @@
-import { ProductPublic } from "@/client/management";
 import { HeaderContext } from "@tanstack/react-table";
 import React from "react";
 import { FaSortAlphaDown, FaSortAlphaUp } from "react-icons/fa";

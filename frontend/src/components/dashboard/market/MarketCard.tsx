@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { MarketService } from "@/lib/api";
 import { handleApiError } from "@/lib/errorHandler";
 import { MarketPlacePublic } from "@/client/management";
-import { Trash2, UserRoundPen } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MarketPlaceForm from "./MarketForm";
 import DashboardCard from "@/components/common/card/DashboardCard";

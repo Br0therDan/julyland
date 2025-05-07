@@ -16,7 +16,6 @@ import {
 } from "@/client/management";
 import { handleApiError } from "@/lib/errorHandler";
 import { toast } from "sonner";
-import { set } from "date-fns";
 import { useCategory } from "@/hooks/useCategory";
 
 interface RankingContextType {
@@ -146,7 +145,6 @@ export const RankingProvider = ({
       fetchRankingList,
       fetchRankingSnapshot,
       fetchTodayRanking,
-      scrapeRanking, // ✅ 의존성 추가
     ]
   ); // ✅ 의존성 명시
 

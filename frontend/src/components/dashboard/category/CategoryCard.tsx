@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
-import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { CategoryService } from "@/lib/api";
 import { handleApiError } from "@/lib/errorHandler";
 import { CategoryPublic } from "@/client/management";
-import { Trash2, UserRoundPen } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CategoryForm from "./CategoryForm";
 import DashboardCard from "@/components/common/card/DashboardCard";
