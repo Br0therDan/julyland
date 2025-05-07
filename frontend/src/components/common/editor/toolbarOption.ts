@@ -1,0 +1,32 @@
+export const formats = [
+  'header',
+  'font',
+  'size',
+  'align',
+  'color',
+  'background',
+  'bold',
+  'italic',
+  'underline',
+  'strike',
+  'blockquote',
+  'list',
+  'bullet',
+  'indent',
+  'link',
+  'image',
+  'video',
+  'code-block',
+]
+
+export const toolbarOptions = [
+  [{ header: [1, 2, 3, 4, 5] }],
+  [{ font: [] }],
+  [{ size: [] }],
+  ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+  [{ align: [] }, { color: [] }, { background: [] }],
+  [{ list: 'ordered' }, { list: 'bullet' }, { indent: '-1' }, { indent: '+1' }],
+  ['link', 'image', 'video'],
+  ['clean'],
+  ['code-block'],
+]

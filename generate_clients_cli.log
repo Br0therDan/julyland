@@ -1,0 +1,475 @@
+2025-04-25 16:41:03,777 [INFO] 클라이언트 생성 시작
+2025-04-25 16:41:33,241 [INFO] 클라이언트 생성 시작
+2025-04-25 16:41:39,080 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 16:41:41,645 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 16:41:43,391 [INFO] 클라이언트 생성 완료
+2025-04-25 17:54:49,008 [INFO] 클라이언트 생성 시작
+2025-04-25 17:54:55,978 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 17:54:57,928 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 17:54:59,525 [INFO] 클라이언트 생성 완료
+2025-04-25 18:08:34,520 [INFO] 클라이언트 생성 시작
+2025-04-25 18:08:42,470 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 18:08:44,462 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 18:08:46,467 [INFO] 클라이언트 생성 완료
+2025-04-25 18:44:36,820 [INFO] 클라이언트 생성 시작
+2025-04-25 18:44:39,297 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 18:44:41,411 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 18:44:43,812 [INFO] 클라이언트 생성 완료
+2025-04-25 22:55:31,837 [INFO] 클라이언트 생성 시작
+2025-04-25 22:55:34,371 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 22:55:36,491 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 22:55:38,843 [INFO] 클라이언트 생성 완료
+2025-04-25 23:11:26,224 [INFO] 클라이언트 생성 시작
+2025-04-25 23:11:28,330 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 23:11:30,470 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 23:11:32,455 [INFO] 클라이언트 생성 완료
+2025-04-25 23:15:19,649 [INFO] 클라이언트 생성 시작
+2025-04-25 23:15:22,280 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 23:15:24,318 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 23:15:26,299 [INFO] 클라이언트 생성 완료
+2025-04-25 23:23:43,600 [INFO] 클라이언트 생성 시작
+2025-04-25 23:23:45,846 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 23:23:47,680 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 23:23:49,809 [INFO] 클라이언트 생성 완료
+2025-04-25 23:38:01,237 [INFO] 클라이언트 생성 시작
+2025-04-25 23:38:02,927 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-25 23:38:05,268 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-25 23:38:07,636 [INFO] 클라이언트 생성 완료
+2025-04-26 07:56:18,431 [INFO] 클라이언트 생성 시작
+2025-04-26 07:56:20,539 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 07:56:23,181 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 07:56:26,649 [INFO] 클라이언트 생성 완료
+2025-04-26 08:04:48,392 [INFO] 클라이언트 생성 시작
+2025-04-26 08:04:50,622 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 08:04:52,515 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 08:04:54,675 [INFO] 클라이언트 생성 완료
+2025-04-26 08:06:31,443 [INFO] 클라이언트 생성 시작
+2025-04-26 08:06:33,901 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 08:06:35,691 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 08:06:37,065 [INFO] 클라이언트 생성 완료
+2025-04-26 08:27:35,654 [INFO] 클라이언트 생성 시작
+2025-04-26 08:27:37,665 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 08:27:39,539 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 08:27:41,484 [INFO] 클라이언트 생성 완료
+2025-04-26 08:28:53,931 [INFO] 클라이언트 생성 시작
+2025-04-26 08:28:55,843 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 08:28:57,651 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 08:28:59,000 [INFO] 클라이언트 생성 완료
+2025-04-26 08:35:20,579 [INFO] 클라이언트 생성 시작
+2025-04-26 08:35:22,422 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 08:35:24,249 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 08:35:26,203 [INFO] 클라이언트 생성 완료
+2025-04-26 08:37:55,022 [INFO] 클라이언트 생성 시작
+2025-04-26 08:37:57,380 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 08:37:59,405 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 08:38:00,871 [INFO] 클라이언트 생성 완료
+2025-04-26 08:39:47,807 [INFO] 클라이언트 생성 시작
+2025-04-26 08:39:49,469 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 08:39:51,274 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 08:39:53,239 [INFO] 클라이언트 생성 완료
+2025-04-26 09:23:11,880 [INFO] 클라이언트 생성 시작
+2025-04-26 09:23:14,080 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 09:23:16,157 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 09:23:18,248 [INFO] 클라이언트 생성 완료
+2025-04-26 09:24:51,349 [INFO] 클라이언트 생성 시작
+2025-04-26 09:24:53,157 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 09:24:55,196 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 09:24:57,061 [INFO] 클라이언트 생성 완료
+2025-04-26 09:29:02,180 [INFO] 클라이언트 생성 시작
+2025-04-26 09:29:03,810 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 09:29:05,816 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 09:29:08,480 [INFO] 클라이언트 생성 완료
+2025-04-26 09:40:55,239 [INFO] 클라이언트 생성 시작
+2025-04-26 09:40:56,798 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 09:40:58,747 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 09:41:00,965 [INFO] 클라이언트 생성 완료
+2025-04-26 10:17:37,713 [INFO] 클라이언트 생성 시작
+2025-04-26 10:17:39,351 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 10:17:42,018 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 10:17:44,612 [INFO] 클라이언트 생성 완료
+2025-04-26 11:11:21,847 [INFO] 클라이언트 생성 시작
+2025-04-26 11:11:23,237 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-26 11:11:26,404 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-26 11:11:28,975 [INFO] 클라이언트 생성 완료
+2025-04-29 17:58:53,033 [INFO] 클라이언트 생성 시작
+2025-04-29 17:58:56,909 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 17:58:58,489 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 17:59:00,182 [INFO] 클라이언트 생성 완료
+2025-04-29 20:36:09,319 [INFO] 클라이언트 생성 시작
+2025-04-29 20:36:12,345 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 20:36:14,009 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 20:36:15,731 [INFO] 클라이언트 생성 완료
+2025-04-29 20:49:46,046 [INFO] 클라이언트 생성 시작
+2025-04-29 20:49:48,212 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 20:49:49,789 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 20:49:51,554 [INFO] 클라이언트 생성 완료
+2025-04-29 21:11:22,308 [INFO] 클라이언트 생성 시작
+2025-04-29 21:11:25,487 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 21:11:27,590 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 21:11:29,481 [INFO] 클라이언트 생성 완료
+2025-04-29 21:21:34,493 [INFO] 클라이언트 생성 시작
+2025-04-29 21:21:36,329 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 21:21:38,012 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 21:21:39,809 [INFO] 클라이언트 생성 완료
+2025-04-29 21:33:44,168 [INFO] 클라이언트 생성 시작
+2025-04-29 21:33:47,629 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 21:33:49,565 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 21:33:51,557 [INFO] 클라이언트 생성 완료
+2025-04-29 21:53:23,793 [INFO] 클라이언트 생성 시작
+2025-04-29 21:53:25,927 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 21:53:27,639 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 21:53:29,738 [INFO] 클라이언트 생성 완료
+2025-04-29 23:10:21,133 [INFO] 클라이언트 생성 시작
+2025-04-29 23:10:23,040 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-29 23:10:24,906 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-29 23:10:26,772 [INFO] 클라이언트 생성 완료
+2025-04-30 00:05:00,203 [INFO] 클라이언트 생성 시작
+2025-04-30 00:05:02,309 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 00:05:04,415 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 00:05:06,399 [INFO] 클라이언트 생성 완료
+2025-04-30 00:28:06,988 [INFO] 클라이언트 생성 시작
+2025-04-30 00:28:08,626 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 00:28:10,608 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 00:28:12,554 [INFO] 클라이언트 생성 완료
+2025-04-30 00:29:40,412 [INFO] 클라이언트 생성 시작
+2025-04-30 00:29:42,422 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 00:29:44,210 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 00:29:45,606 [INFO] 클라이언트 생성 완료
+2025-04-30 01:00:47,021 [INFO] 클라이언트 생성 시작
+2025-04-30 01:00:49,827 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 01:00:51,707 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 01:00:53,538 [INFO] 클라이언트 생성 완료
+2025-04-30 01:02:29,979 [INFO] 클라이언트 생성 시작
+2025-04-30 01:02:31,762 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 01:02:33,527 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 01:02:34,885 [INFO] 클라이언트 생성 완료
+2025-04-30 04:17:20,069 [INFO] 클라이언트 생성 시작
+2025-04-30 04:17:25,662 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 04:17:27,621 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 04:17:29,663 [INFO] 클라이언트 생성 완료
+2025-04-30 04:37:00,060 [INFO] 클라이언트 생성 시작
+2025-04-30 04:37:01,964 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 04:37:03,739 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 04:37:05,542 [INFO] 클라이언트 생성 완료
+2025-04-30 04:40:19,779 [INFO] 클라이언트 생성 시작
+2025-04-30 04:40:27,065 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 04:40:28,730 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 04:40:30,089 [INFO] 클라이언트 생성 완료
+2025-04-30 05:04:09,744 [INFO] 클라이언트 생성 시작
+2025-04-30 05:04:15,098 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 05:04:16,926 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 05:04:18,947 [INFO] 클라이언트 생성 완료
+2025-04-30 13:48:39,492 [INFO] 클라이언트 생성 시작
+2025-04-30 13:48:42,036 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-04-30 13:48:43,837 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-04-30 13:48:45,284 [INFO] 클라이언트 생성 완료
+2025-05-01 12:28:44,622 [INFO] 클라이언트 생성 시작
+2025-05-01 12:28:47,054 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 12:28:49,332 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 12:28:52,293 [INFO] 클라이언트 생성 완료
+2025-05-01 16:13:08,161 [INFO] 클라이언트 생성 시작
+2025-05-01 16:13:09,863 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 16:13:12,092 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 16:13:14,760 [INFO] 클라이언트 생성 완료
+2025-05-01 16:31:57,197 [INFO] 클라이언트 생성 시작
+2025-05-01 16:31:58,737 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 16:32:00,472 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 16:32:02,571 [INFO] 클라이언트 생성 완료
+2025-05-01 16:42:16,618 [INFO] 클라이언트 생성 시작
+2025-05-01 16:42:18,132 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 16:42:19,850 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 16:42:21,755 [INFO] 클라이언트 생성 완료
+2025-05-01 20:45:50,784 [INFO] 클라이언트 생성 시작
+2025-05-01 20:45:52,426 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 20:45:54,997 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 20:45:57,306 [INFO] 클라이언트 생성 완료
+2025-05-01 20:47:12,056 [INFO] 클라이언트 생성 시작
+2025-05-01 20:47:15,262 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 20:47:17,072 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 20:47:18,746 [INFO] 클라이언트 생성 완료
+2025-05-01 23:18:28,847 [INFO] 클라이언트 생성 시작
+2025-05-01 23:18:32,162 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 23:18:34,075 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 23:18:36,430 [INFO] 클라이언트 생성 완료
+2025-05-01 23:49:22,404 [INFO] 클라이언트 생성 시작
+2025-05-01 23:49:24,903 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-01 23:49:26,821 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-01 23:49:28,639 [INFO] 클라이언트 생성 완료
+2025-05-02 00:05:49,709 [INFO] 클라이언트 생성 시작
+2025-05-02 00:05:52,270 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-02 00:05:54,312 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-02 00:05:56,493 [INFO] 클라이언트 생성 완료
+2025-05-02 00:22:17,623 [INFO] 클라이언트 생성 시작
+2025-05-02 00:22:19,224 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-02 00:22:21,107 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-02 00:22:23,066 [INFO] 클라이언트 생성 완료
+2025-05-02 00:33:27,209 [INFO] 클라이언트 생성 시작
+2025-05-02 00:33:29,071 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-02 00:33:30,867 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-02 00:33:32,834 [INFO] 클라이언트 생성 완료
+2025-05-02 00:40:29,377 [INFO] 클라이언트 생성 시작
+2025-05-02 00:40:31,790 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-02 00:40:33,720 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-02 00:40:36,087 [INFO] 클라이언트 생성 완료
+2025-05-02 01:26:07,975 [INFO] 클라이언트 생성 시작
+2025-05-02 01:26:22,607 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-02 01:26:24,388 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-02 01:26:26,487 [INFO] 클라이언트 생성 완료
+2025-05-03 14:42:55,008 [INFO] 클라이언트 생성 시작
+2025-05-03 14:42:57,023 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 14:42:59,210 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 14:43:01,655 [INFO] 클라이언트 생성 완료
+2025-05-03 15:22:09,482 [INFO] 클라이언트 생성 시작
+2025-05-03 15:22:13,315 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 15:22:15,281 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 15:22:18,068 [INFO] 클라이언트 생성 완료
+2025-05-03 15:28:03,604 [INFO] 클라이언트 생성 시작
+2025-05-03 15:28:05,053 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 15:28:07,772 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 15:28:10,313 [INFO] 클라이언트 생성 완료
+2025-05-03 15:29:16,788 [INFO] 클라이언트 생성 시작
+2025-05-03 15:29:18,247 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 15:29:20,111 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 15:29:21,826 [INFO] 클라이언트 생성 완료
+2025-05-03 15:30:13,958 [INFO] 클라이언트 생성 시작
+2025-05-03 15:30:15,814 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 15:30:17,606 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 15:30:19,548 [INFO] 클라이언트 생성 완료
+2025-05-03 16:05:25,669 [INFO] 클라이언트 생성 시작
+2025-05-03 16:05:28,242 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 16:05:30,236 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 16:05:32,686 [INFO] 클라이언트 생성 완료
+2025-05-03 17:27:26,363 [INFO] 클라이언트 생성 시작
+2025-05-03 17:27:27,952 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 17:27:29,841 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 17:27:32,708 [INFO] 클라이언트 생성 완료
+2025-05-03 18:21:11,574 [INFO] 클라이언트 생성 시작
+2025-05-03 18:21:13,157 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 18:21:15,626 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 18:21:17,330 [INFO] 클라이언트 생성 완료
+2025-05-03 21:39:22,317 [INFO] 클라이언트 생성 시작
+2025-05-03 21:39:25,954 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 21:39:33,498 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 21:39:38,187 [INFO] 클라이언트 생성 완료
+2025-05-03 21:56:28,463 [INFO] 클라이언트 생성 시작
+2025-05-03 21:56:30,106 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-03 21:56:32,401 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-03 21:56:34,446 [INFO] 클라이언트 생성 완료
+2025-05-04 00:39:13,808 [INFO] 클라이언트 생성 시작
+2025-05-04 00:39:15,598 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 00:39:17,458 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 00:39:19,594 [INFO] 클라이언트 생성 완료
+2025-05-04 00:58:12,921 [INFO] 클라이언트 생성 시작
+2025-05-04 00:58:14,340 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 00:58:17,409 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 00:58:20,268 [INFO] 클라이언트 생성 완료
+2025-05-04 01:21:03,990 [INFO] 클라이언트 생성 시작
+2025-05-04 01:21:06,697 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 01:21:09,636 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 01:21:11,537 [INFO] 클라이언트 생성 완료
+2025-05-04 01:21:47,521 [INFO] 클라이언트 생성 시작
+2025-05-04 01:21:50,141 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 01:21:52,097 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 01:21:53,634 [INFO] 클라이언트 생성 완료
+2025-05-04 01:28:38,830 [INFO] 클라이언트 생성 시작
+2025-05-04 01:28:40,564 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 01:28:42,959 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 01:28:45,032 [INFO] 클라이언트 생성 완료
+2025-05-04 01:35:17,349 [INFO] 클라이언트 생성 시작
+2025-05-04 01:35:19,295 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 01:35:21,696 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 01:35:23,917 [INFO] 클라이언트 생성 완료
+2025-05-04 01:41:38,388 [INFO] 클라이언트 생성 시작
+2025-05-04 01:41:41,288 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 01:41:43,613 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 01:41:45,695 [INFO] 클라이언트 생성 완료
+2025-05-04 01:59:25,923 [INFO] 클라이언트 생성 시작
+2025-05-04 01:59:27,512 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 01:59:29,698 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 01:59:31,341 [INFO] 클라이언트 생성 완료
+2025-05-04 02:05:01,476 [INFO] 클라이언트 생성 시작
+2025-05-04 02:05:03,955 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 02:05:07,206 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 02:05:09,560 [INFO] 클라이언트 생성 완료
+2025-05-04 02:07:54,559 [INFO] 클라이언트 생성 시작
+2025-05-04 02:08:00,886 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 02:08:03,084 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 02:08:04,634 [INFO] 클라이언트 생성 완료
+2025-05-04 02:20:24,103 [INFO] 클라이언트 생성 시작
+2025-05-04 02:20:26,422 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 02:20:29,215 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 02:20:32,348 [INFO] 클라이언트 생성 완료
+2025-05-04 02:23:54,743 [INFO] 클라이언트 생성 시작
+2025-05-04 02:23:57,202 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 02:23:59,242 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 02:24:01,014 [INFO] 클라이언트 생성 완료
+2025-05-04 02:46:29,620 [INFO] 클라이언트 생성 시작
+2025-05-04 02:46:32,397 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 02:46:34,640 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 02:46:36,920 [INFO] 클라이언트 생성 완료
+2025-05-04 03:38:39,446 [INFO] 클라이언트 생성 시작
+2025-05-04 03:38:42,171 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 03:38:44,331 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 03:38:46,317 [INFO] 클라이언트 생성 완료
+2025-05-04 03:42:03,040 [INFO] 클라이언트 생성 시작
+2025-05-04 03:42:05,618 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 03:42:07,549 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 03:42:08,994 [INFO] 클라이언트 생성 완료
+2025-05-04 03:43:11,907 [INFO] 클라이언트 생성 시작
+2025-05-04 03:43:14,360 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-04 03:43:16,332 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-04 03:43:17,832 [INFO] 클라이언트 생성 완료
+2025-05-05 17:12:33,901 [INFO] 클라이언트 생성 시작
+2025-05-05 17:12:35,900 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 17:12:38,401 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 17:12:40,653 [INFO] 클라이언트 생성 완료
+2025-05-05 17:18:01,744 [INFO] 클라이언트 생성 시작
+2025-05-05 17:18:03,877 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 17:18:06,397 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 17:18:08,679 [INFO] 클라이언트 생성 완료
+2025-05-05 18:07:03,571 [INFO] 클라이언트 생성 시작
+2025-05-05 18:07:05,718 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 18:07:08,163 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 18:07:10,374 [INFO] 클라이언트 생성 완료
+2025-05-05 21:24:57,323 [INFO] 클라이언트 생성 시작
+2025-05-05 21:24:59,343 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 21:25:01,129 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 21:25:03,182 [INFO] 클라이언트 생성 완료
+2025-05-05 21:27:06,258 [INFO] 클라이언트 생성 시작
+2025-05-05 21:27:09,314 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 21:27:11,327 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 21:27:12,730 [INFO] 클라이언트 생성 완료
+2025-05-05 21:27:26,593 [INFO] 클라이언트 생성 시작
+2025-05-05 21:27:28,719 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 21:27:30,821 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 21:27:32,234 [INFO] 클라이언트 생성 완료
+2025-05-05 21:28:16,885 [INFO] 클라이언트 생성 시작
+2025-05-05 21:28:42,133 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 21:28:44,118 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 21:28:46,306 [INFO] 클라이언트 생성 완료
+2025-05-05 22:47:00,916 [INFO] 클라이언트 생성 시작
+2025-05-05 22:47:02,822 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 22:47:05,583 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 22:47:07,222 [INFO] 클라이언트 생성 완료
+2025-05-05 23:06:26,369 [INFO] 클라이언트 생성 시작
+2025-05-05 23:06:27,891 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 23:06:29,572 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 23:06:31,005 [INFO] 클라이언트 생성 완료
+2025-05-05 23:28:06,093 [INFO] 클라이언트 생성 시작
+2025-05-05 23:28:08,114 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-05 23:28:09,997 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-05 23:28:11,965 [INFO] 클라이언트 생성 완료
+2025-05-06 01:53:57,532 [INFO] 클라이언트 생성 시작
+2025-05-06 01:54:01,784 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-06 01:54:03,733 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-06 01:54:06,640 [INFO] 클라이언트 생성 완료
+2025-05-06 02:18:23,790 [INFO] 클라이언트 생성 시작
+2025-05-06 02:18:26,509 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-06 02:18:28,436 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-06 02:18:31,337 [INFO] 클라이언트 생성 완료
+2025-05-06 02:22:42,561 [INFO] 클라이언트 생성 시작
+2025-05-06 02:22:44,213 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-06 02:22:46,350 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-06 02:22:47,862 [INFO] 클라이언트 생성 완료
+2025-05-06 02:26:45,179 [INFO] 클라이언트 생성 시작
+2025-05-06 02:26:47,220 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-06 02:26:49,323 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-06 02:26:51,248 [INFO] 클라이언트 생성 완료
+2025-05-06 04:52:53,678 [INFO] 클라이언트 생성 시작
+2025-05-06 04:52:56,487 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-06 04:52:58,645 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-06 04:53:01,292 [INFO] 클라이언트 생성 완료
+2025-05-06 04:53:16,424 [INFO] 클라이언트 생성 시작
+2025-05-06 04:53:19,295 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-06 04:53:20,916 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-06 04:53:22,526 [INFO] 클라이언트 생성 완료
+2025-05-06 05:37:15,818 [INFO] 클라이언트 생성 시작
+2025-05-06 05:37:18,068 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-06 05:37:20,254 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-06 05:37:22,657 [INFO] 클라이언트 생성 완료
+2025-05-07 11:53:00,543 [INFO] 클라이언트 생성 시작
+2025-05-07 11:53:02,528 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 11:53:04,605 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 11:53:06,468 [INFO] 클라이언트 생성 완료
+2025-05-07 12:52:17,669 [INFO] 클라이언트 생성 시작
+2025-05-07 12:52:19,917 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 12:52:21,876 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 12:52:23,683 [INFO] 클라이언트 생성 완료
+2025-05-07 13:21:39,786 [INFO] 클라이언트 생성 시작
+2025-05-07 13:21:41,601 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 13:21:43,325 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 13:21:45,602 [INFO] 클라이언트 생성 완료
+2025-05-07 14:04:28,796 [INFO] 클라이언트 생성 시작
+2025-05-07 14:04:31,138 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:04:33,290 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:04:36,538 [INFO] 클라이언트 생성 완료
+2025-05-07 14:19:02,787 [INFO] 클라이언트 생성 시작
+2025-05-07 14:19:04,754 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:19:06,610 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:19:09,147 [INFO] 클라이언트 생성 완료
+2025-05-07 14:22:53,108 [INFO] 클라이언트 생성 시작
+2025-05-07 14:22:57,028 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:22:58,930 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:23:01,330 [INFO] 클라이언트 생성 완료
+2025-05-07 14:30:16,654 [INFO] 클라이언트 생성 시작
+2025-05-07 14:30:18,353 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:30:20,448 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:30:22,829 [INFO] 클라이언트 생성 완료
+2025-05-07 14:32:00,951 [INFO] 클라이언트 생성 시작
+2025-05-07 14:32:02,897 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:32:04,850 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:32:07,319 [INFO] 클라이언트 생성 완료
+2025-05-07 14:32:20,272 [INFO] 클라이언트 생성 시작
+2025-05-07 14:32:23,611 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:32:25,500 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:32:28,201 [INFO] 클라이언트 생성 완료
+2025-05-07 14:41:04,118 [INFO] 클라이언트 생성 시작
+2025-05-07 14:42:47,224 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:42:49,011 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:42:52,028 [INFO] 클라이언트 생성 완료
+2025-05-07 14:49:21,671 [INFO] 클라이언트 생성 시작
+2025-05-07 14:49:23,078 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 14:49:25,528 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 14:49:28,569 [INFO] 클라이언트 생성 완료
+2025-05-07 19:21:49,111 [INFO] 클라이언트 생성 시작
+2025-05-07 19:21:50,588 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-07 19:21:52,287 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-07 19:21:54,026 [INFO] 클라이언트 생성 완료
+2025-05-08 00:40:13,114 [INFO] 클라이언트 생성 시작
+2025-05-08 00:44:47,654 [INFO] 클라이언트 생성 시작
+2025-05-08 00:44:51,989 [ERROR] [iam] 오류: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import app.main, json; print(json.dumps(app.main.app.openapi()))
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/donghakim/development/julyland/backend/iam/app/main.py", line 13, in <module>
+    from app.api.main import api_router
+  File "/Users/donghakim/development/julyland/backend/iam/app/api/main.py", line 2, in <module>
+    from app.api.routes import (
+    ...<7 lines>...
+    )
+  File "/Users/donghakim/development/julyland/backend/iam/app/api/routes/auth.py", line 9, in <module>
+    from app.api.deps import get_current_active_superuser
+  File "/Users/donghakim/development/julyland/backend/iam/app/api/deps.py", line 13, in <module>
+    from app.core.config import settings
+  File "/Users/donghakim/development/julyland/backend/iam/app/core/config.py", line 144, in <module>
+    settings = Settings()
+  File "/Users/donghakim/development/julyland/.venv/lib/python3.13/site-packages/pydantic_settings/main.py", line 176, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        **__pydantic_self__._settings_build_values(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<26 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/donghakim/development/julyland/.venv/lib/python3.13/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+DOMAIN
+  Field required [type=missing, input_value={'PROJECT_NAME': 'JulyLan...ASSWORD': 'Goaltocut72'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+
+2025-05-08 00:44:52,735 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
+2025-05-08 00:44:54,632 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
+2025-05-08 00:44:56,520 [INFO] 클라이언트 생성 완료

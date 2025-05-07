@@ -1,0 +1,91 @@
+services:
+  mongodb:
+    restart: "no"
+    ports:
+      - "27018:27017"
+
+  management:
+    restart: "no"
+    ports:
+      - "8203:8000"
+    build:
+      context: ./backend/management
+    command: ["fastapi", "run", "--reload", "app/main.py"]
+    volumes:
+      - ./backend/management/htmlcov:/app/htmlcov
+    environment:
+      - ENVIRONMENT=local
+    develop:
+      watch:
+        - path: ./backend/management
+          action: sync
+          target: /app
+          ignore:
+            - .venv
+        - path: ./pyproject.toml
+          action: rebuild
+    labels:
+      traefik.enable:            "true"
+      traefik.docker.network:    "web"
+      traefik.http.services.management.loadbalancer.server.port: "8000"
+      traefik.http.routers.management.rule:         "Host(`${DOMAIN}/management`)"
+      traefik.http.routers.management.entrypoints:  "web"
+
+
+  iam:
+    restart: no
+    ports:
+      - "8202:8000"
+    build:
+      context: ./backend/iam
+    env_file:
+      - .env.local
+    command:
+      - fastapi
+      - run
+      - --reload
+      - "app/main.py"
+    develop:
+      watch:
+        - path: ./backend/iam
+          action: sync
+          target: /app
+          ignore:
+            - ./backend/.venv
+            - .venv
+        - path: ./pyproject.toml
+          action: rebuild
+    volumes:
+      - ./.backend/iam/htmlcov:/app/htmlcov
+    labels:
+      traefik.enable:            "true"
+      traefik.docker.network:    "web"
+      traefik.http.services.iam.loadbalancer.server.port: "8000"
+      traefik.http.routers.iam.rule:         "Host(`${DOMAIN}/iam`)"
+      traefik.http.routers.iam.entrypoints:  "web"
+  
+
+  # 🔹 MinIO 추가
+  minio:
+    image: minio/minio
+    container_name: minio-jl-bucket
+    command: server /data --console-address ":9001"
+    ports:
+      - "9010:9000"  # S3 API 포트
+      - "9011:9001"  # MinIO Web UI 포트
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}     # 기본 Access Key
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}  # 기본 Secret Key
+    volumes:
+      - minio_data:/data
+    networks:
+      - julyland-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+
+
+volumes:
+  minio_data:

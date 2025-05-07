@@ -1,0 +1,24 @@
+# path: app/exceptions/__init__.py
+
+from .auth import (
+    INVALID_CREDENTIALS,
+    USER_NOT_FOUND,
+    INACTIVE_USER,
+    UNVERIFIED_EMAIL,
+    SUPERUSER_REQUIRED,
+)
+
+from .subscription import (
+    SUBSCRIPTION_NOT_FOUND,
+    ALREADY_SUBSCRIBED,
+)
+
+__all__ = [
+    "INVALID_CREDENTIALS",
+    "USER_NOT_FOUND",
+    "INACTIVE_USER",
+    "UNVERIFIED_EMAIL",
+    "SUPERUSER_REQUIRED",
+    "SUBSCRIPTION_NOT_FOUND",
+    "ALREADY_SUBSCRIBED",
+]
