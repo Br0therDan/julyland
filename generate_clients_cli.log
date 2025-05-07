@@ -473,3 +473,45 @@ DOMAIN
 2025-05-08 00:44:52,735 [INFO] [management] OpenAPI 생성 완료: frontend/openapi/management.json
 2025-05-08 00:44:54,632 [INFO] [management] 클라이언트 생성 완료: frontend/src/client/management
 2025-05-08 00:44:56,520 [INFO] 클라이언트 생성 완료
+2025-05-08 04:06:50,354 [INFO] 클라이언트 생성 시작
+2025-05-08 04:06:55,463 [ERROR] [iam-jl] 오류: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import app.main, json; print(json.dumps(app.main.app.openapi()))
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/donghakim/development/julyland/backend/iam-jl/app/main.py", line 13, in <module>
+    from app.api.main import api_router
+  File "/Users/donghakim/development/julyland/backend/iam-jl/app/api/main.py", line 2, in <module>
+    from app.api.routes import (
+    ...<7 lines>...
+    )
+  File "/Users/donghakim/development/julyland/backend/iam-jl/app/api/routes/auth.py", line 9, in <module>
+    from app.api.deps import get_current_active_superuser
+  File "/Users/donghakim/development/julyland/backend/iam-jl/app/api/deps.py", line 13, in <module>
+    from app.core.config import settings
+  File "/Users/donghakim/development/julyland/backend/iam-jl/app/core/config.py", line 144, in <module>
+    settings = Settings()
+  File "/Users/donghakim/development/julyland/.venv/lib/python3.13/site-packages/pydantic_settings/main.py", line 176, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        **__pydantic_self__._settings_build_values(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<26 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/donghakim/development/julyland/.venv/lib/python3.13/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Settings
+FIRST_SUPERUSER
+  Field required [type=missing, input_value={'PROJECT_NAME': 'JulyLan...IL': 'info@mysingle.io'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+FIRST_SUPERUSER_PASSWORD
+  Field required [type=missing, input_value={'PROJECT_NAME': 'JulyLan...IL': 'info@mysingle.io'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+
+2025-05-08 04:06:55,465 [INFO] 클라이언트 생성 완료
+2025-05-08 04:07:50,146 [INFO] 클라이언트 생성 시작
+2025-05-08 04:07:53,382 [INFO] [iam-jl] OpenAPI 생성 완료: frontend/openapi/iam-jl.json
+2025-05-08 04:07:55,089 [INFO] [iam-jl] 클라이언트 생성 완료: frontend/src/client/iam-jl
+2025-05-08 04:07:56,946 [INFO] 클라이언트 생성 완료
